@@ -51,7 +51,10 @@ with open(zip_path, "wb") as f:
     for chunk in r.iter_content(chunk_size=8192):
         f.write(chunk)
 bpy.ops.preferences.addon_install(filepath=zip_path, overwrite=True)
-bpy.ops.preferences.addon_enable(module={repr(addon_module)})
+bpy.app.timers.register(
+    lambda: bpy.ops.preferences.addon_enable(module={repr(addon_module)}),
+    first_interval=0.5
+)
 if os.path.exists(zip_path):
     os.remove(zip_path)
     print("Zip_Removed")
