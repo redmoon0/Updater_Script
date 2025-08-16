@@ -2,7 +2,7 @@ bl_info = {
 	"name": "Update Me",
 	"description": "Red Assets Library",
 	"author": "Redmoon",
-	"version": (1, 0, 3),
+	"version": (1, 0, 6),
 	"blender": (4, 0, 0),
 	"location": "View 3D > Tool Shelf > Demo Updater",
 	"warning": "",
