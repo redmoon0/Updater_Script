@@ -14,7 +14,7 @@ import bpy
 from . import updater
 
 owner = "redmoon0"
-repo = "Addon_Updator"
+repo = "Updater_Script"
 class OBJECT_OT_my_button(bpy.types.Operator):
     bl_idname = "object.my_button"
     bl_label = "Update"
